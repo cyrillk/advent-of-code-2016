@@ -1,3 +1,4 @@
-# primary-scala-scalatest-seed
+# Advent of Code 2016
 
-Activator template for Scala with ScalaTest
+http://adventofcode.com/2016
+
