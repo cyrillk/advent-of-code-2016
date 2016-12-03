@@ -5,7 +5,7 @@ package challenges
   *
   * http://adventofcode.com/2016/day/1
   */
-object NoTimeForTaxicab {
+object Day1NoTimeForTaxicab {
 
   case class Point(x: Int, y: Int)
 
@@ -27,7 +27,7 @@ object NoTimeForTaxicab {
 
   case class Move(face: Face, steps: Int)
 
-  def first(input: String): Int = {
+  def partOne(input: String): Int = {
 
     val moves = parseMoves(input)
 
@@ -48,7 +48,7 @@ object NoTimeForTaxicab {
     Math.abs(end._1.x) + Math.abs(end._1.y)
   }
 
-  def second(input: String): Int = {
+  def partTwo(input: String): Int = {
 
     val moves = parseMoves(input)
 
