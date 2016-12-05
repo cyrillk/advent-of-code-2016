@@ -28,7 +28,8 @@ class Day2BathroomSecuritySuite extends FeatureSpec with Matchers {
     }
 
     scenario("Result") {
-      println(s"Part 1 result: ${Day2BathroomSecurity.partOne(puzzleInput)}")
+      val result = Day2BathroomSecurity.partOne(puzzleInput)
+      println(s"Day 2 Part 1: $result")
     }
   }
 
@@ -64,7 +65,8 @@ class Day2BathroomSecuritySuite extends FeatureSpec with Matchers {
     }
 
     scenario("Result") {
-      println(s"Part 2 result: ${Day2BathroomSecurity.partTwo(puzzleInput)}")
+      val result = Day2BathroomSecurity.partTwo(puzzleInput)
+      println(s"Day 2 Part 2: $result")
     }
   }
 }

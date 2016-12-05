@@ -33,7 +33,7 @@ class Day1NoTimeForTaxicabSuite extends FeatureSpec with Matchers {
     }
     scenario("Part 1 - Calculate") {
       val result = Day1NoTimeForTaxicab.partOne(puzzleInput)
-      println(s"Part 1 result: $result")
+      println(s"Day 1 Part 1: $result")
     }
   }
 
@@ -46,7 +46,7 @@ class Day1NoTimeForTaxicabSuite extends FeatureSpec with Matchers {
 
     scenario("Calculate") {
       val result = Day1NoTimeForTaxicab.partTwo(puzzleInput)
-      println(s"Part 2 result: $result")
+      println(s"Day 1 Part 2: $result")
     }
   }
 }
