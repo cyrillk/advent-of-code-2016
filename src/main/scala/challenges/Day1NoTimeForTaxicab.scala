@@ -1,8 +1,6 @@
 package challenges
 
 /**
-  * Day 1: No Time for a Taxicab
-  *
   * http://adventofcode.com/2016/day/1
   */
 object Day1NoTimeForTaxicab {

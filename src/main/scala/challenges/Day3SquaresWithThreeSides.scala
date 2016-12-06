@@ -1,5 +1,8 @@
 package challenges
 
+/**
+  * http://adventofcode.com/2016/day/3
+  */
 object Day3SquaresWithThreeSides {
 
   case class Triangle(a: Int, b: Int, c: Int)
