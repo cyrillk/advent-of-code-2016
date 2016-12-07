@@ -4,7 +4,7 @@ import java.io.InputStream
 
 import org.scalatest.{FeatureSpec, Matchers}
 
-class Day4SecurityThroughObscuritySuite extends FeatureSpec with Matchers {
+class Day4SecurityThroughObscuritySpec extends FeatureSpec with Matchers {
 
   feature("Part 1") {
     scenario("Scenario 1") {

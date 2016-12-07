@@ -4,7 +4,7 @@ import java.io.InputStream
 
 import org.scalatest.{FeatureSpec, Matchers}
 
-class Day3SquaresWithThreeSidesSuite extends FeatureSpec with Matchers {
+class Day3SquaresWithThreeSidesSpec extends FeatureSpec with Matchers {
 
   feature("Part 1") {
     scenario("Scenario 1") {
