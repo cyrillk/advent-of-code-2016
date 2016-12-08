@@ -68,7 +68,7 @@ class Day6SignalsAndNoiseSpec extends FeatureSpec with Matchers {
       val stream: InputStream = getClass.getResourceAsStream("/Day6SignalsAndNoise.txt")
       val actualInput = scala.io.Source.fromInputStream(stream).getLines().toList.mkString("\n")
       val result = Day6SignalsAndNoise.partTwo(actualInput)
-      println(s"Day 6 Part 1: $result")
+      println(s"Day 6 Part 2: $result")
     }
   }
 }
