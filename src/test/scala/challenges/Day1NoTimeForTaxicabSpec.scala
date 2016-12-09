@@ -1,9 +1,8 @@
 package challenges
 
-import challenges.Day1NoTimeForTaxicabSuite._
 import org.scalatest.{FeatureSpec, Matchers}
 
-class Day1NoTimeForTaxicabSuite extends FeatureSpec with Matchers {
+class Day1NoTimeForTaxicabSpec extends FeatureSpec with Matchers with BunnySuite {
 
   feature("Part 1") {
 
@@ -32,7 +31,8 @@ class Day1NoTimeForTaxicabSuite extends FeatureSpec with Matchers {
       Day1NoTimeForTaxicab.partOne(actualInput) should be(12)
     }
     scenario("Part 1 - Calculate") {
-      val result = Day1NoTimeForTaxicab.partOne(puzzleInput)
+      val actualInput = readInput("Day1NoTimeForTaxicab.txt")
+      val result = Day1NoTimeForTaxicab.partOne(actualInput)
       println(s"Day 1 Part 1: $result")
     }
   }
@@ -45,13 +45,9 @@ class Day1NoTimeForTaxicabSuite extends FeatureSpec with Matchers {
     }
 
     scenario("Calculate") {
-      val result = Day1NoTimeForTaxicab.partTwo(puzzleInput)
+      val actualInput = readInput("Day1NoTimeForTaxicab.txt")
+      val result = Day1NoTimeForTaxicab.partTwo(actualInput)
       println(s"Day 1 Part 2: $result")
     }
   }
-}
-
-object Day1NoTimeForTaxicabSuite {
-  private val puzzleInput =
-    "R3, R1, R4, L4, R3, R1, R1, L3, L5, L5, L3, R1, R4, L2, L1, R3, L3, R2, R1, R1, L5, L2, L1, R2, L4, R1, L2, L4, R2, R2, L2, L4, L3, R1, R4, R3, L1, R1, L5, R4, L2, R185, L2, R4, R49, L3, L4, R5, R1, R1, L1, L1, R2, L1, L4, R4, R5, R4, L3, L5, R1, R71, L1, R1, R186, L5, L2, R5, R4, R1, L5, L2, R3, R2, R5, R5, R4, R1, R4, R2, L1, R4, L1, L4, L5, L4, R4, R5, R1, L2, L4, L1, L5, L3, L5, R2, L5, R4, L4, R3, R3, R1, R4, L1, L2, R2, L1, R4, R2, R2, R5, R2, R5, L1, R1, L4, R5, R4, R2, R4, L5, R3, R2, R5, R3, L3, L5, L4, L3, L2, L2, R3, R2, L1, L1, L5, R1, L3, R3, R4, R5, L3, L5, R1, L3, L5, L5, L2, R1, L3, L1, L3, R4, L1, R3, L2, L2, R3, R3, R4, R4, R1, L4, R1, L5"
 }

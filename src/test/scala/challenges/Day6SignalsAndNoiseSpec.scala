@@ -1,10 +1,8 @@
 package challenges
 
-import java.io.InputStream
-
 import org.scalatest.{FeatureSpec, Matchers}
 
-class Day6SignalsAndNoiseSpec extends FeatureSpec with Matchers {
+class Day6SignalsAndNoiseSpec extends FeatureSpec with Matchers with BunnySuite {
 
   feature("Part 1") {
     scenario("Scenario 1") {
@@ -32,8 +30,7 @@ class Day6SignalsAndNoiseSpec extends FeatureSpec with Matchers {
     }
 
     scenario("Result") {
-      val stream: InputStream = getClass.getResourceAsStream("/Day6SignalsAndNoise.txt")
-      val actualInput = scala.io.Source.fromInputStream(stream).getLines().toList.mkString("\n")
+      val actualInput = readInput("Day6SignalsAndNoise.txt")
       val result = Day6SignalsAndNoise.partOne(actualInput)
       println(s"Day 6 Part 1: $result")
     }
@@ -65,8 +62,7 @@ class Day6SignalsAndNoiseSpec extends FeatureSpec with Matchers {
     }
 
     scenario("Result") {
-      val stream: InputStream = getClass.getResourceAsStream("/Day6SignalsAndNoise.txt")
-      val actualInput = scala.io.Source.fromInputStream(stream).getLines().toList.mkString("\n")
+      val actualInput = readInput("Day6SignalsAndNoise.txt")
       val result = Day6SignalsAndNoise.partTwo(actualInput)
       println(s"Day 6 Part 2: $result")
     }

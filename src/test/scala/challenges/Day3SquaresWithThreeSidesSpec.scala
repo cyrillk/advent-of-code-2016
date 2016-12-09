@@ -1,10 +1,8 @@
 package challenges
 
-import java.io.InputStream
-
 import org.scalatest.{FeatureSpec, Matchers}
 
-class Day3SquaresWithThreeSidesSpec extends FeatureSpec with Matchers {
+class Day3SquaresWithThreeSidesSpec extends FeatureSpec with Matchers with BunnySuite {
 
   feature("Part 1") {
     scenario("Scenario 1") {
@@ -36,8 +34,7 @@ class Day3SquaresWithThreeSidesSpec extends FeatureSpec with Matchers {
     }
 
     scenario("Result") {
-      val stream: InputStream = getClass.getResourceAsStream("/Day3SquaresWithThreeSides.txt")
-      val actualInput = scala.io.Source.fromInputStream(stream).getLines().toList.mkString("\n")
+      val actualInput = readInput("Day3SquaresWithThreeSides.txt")
       val result = Day3SquaresWithThreeSides.partOne(actualInput)
       println(s"Day 3 Part 1: $result")
     }
@@ -59,8 +56,7 @@ class Day3SquaresWithThreeSidesSpec extends FeatureSpec with Matchers {
     }
 
     scenario("Result") {
-      val stream: InputStream = getClass.getResourceAsStream("/Day3SquaresWithThreeSides.txt")
-      val actualInput = scala.io.Source.fromInputStream(stream).getLines().toList.mkString("\n")
+      val actualInput = readInput("Day3SquaresWithThreeSides.txt")
       val result = Day3SquaresWithThreeSides.partTwo(actualInput)
       println(s"Day 3 Part 2: $result")
     }

@@ -72,9 +72,6 @@ object Day1NoTimeForTaxicab {
       if (seen(cur)) (seen, dups :+ cur) else (seen + cur, dups)
     }._2
 
-    //    println(steps.mkString(","))
-    //    println(duplicates.mkString(","))
-
     Math.abs(duplicates.last.x) + Math.abs(duplicates.last.y)
   }
 

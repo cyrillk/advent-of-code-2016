@@ -1,10 +1,8 @@
 package challenges
 
-import java.io.InputStream
-
 import org.scalatest.{FeatureSpec, Matchers}
 
-class Day7InternetProtocolVersion7Spec extends FeatureSpec with Matchers {
+class Day7InternetProtocolVersion7Spec extends FeatureSpec with Matchers with BunnySuite {
 
   feature("Part 1") {
     scenario("Scenario 1") {
@@ -30,8 +28,7 @@ class Day7InternetProtocolVersion7Spec extends FeatureSpec with Matchers {
     }
 
     scenario("Result") {
-      val stream: InputStream = getClass.getResourceAsStream("/Day7InternetProtocolVersion7.txt")
-      val actualInput = scala.io.Source.fromInputStream(stream).getLines().toList.mkString("\n")
+      val actualInput = readInput("Day7InternetProtocolVersion7.txt")
       val result = Day7InternetProtocolVersion7.partOne(actualInput)
       println(s"Day 7 Part 1: $result")
     }
@@ -51,8 +48,7 @@ class Day7InternetProtocolVersion7Spec extends FeatureSpec with Matchers {
     }
 
     scenario("Result") {
-      val stream: InputStream = getClass.getResourceAsStream("/Day7InternetProtocolVersion7.txt")
-      val actualInput = scala.io.Source.fromInputStream(stream).getLines().toList.mkString("\n")
+      val actualInput = readInput("Day7InternetProtocolVersion7.txt")
       val result = Day7InternetProtocolVersion7.partTwo(actualInput)
       println(s"Day 7 Part 2: $result")
     }
